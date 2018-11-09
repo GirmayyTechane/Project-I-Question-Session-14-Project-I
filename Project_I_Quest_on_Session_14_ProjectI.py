@@ -260,28 +260,6 @@ df=pysqldf(p)
 df
 
 
-# 15. Join users to transaction,diplaying all matchingrows AND all non-matching rows 
-
-# In[1]:
-
-
-pysqldf = lambda r: sqldf(r, globals())
-
-
-# In[2]:
-
-
-r="""select * from transactions t full outer join users u on t.userid=u.userid;"""
-
-
-# In[3]:
-
-
-df=pysqldf(r)
-df
-
-
-
 # 15. Join users to transactions, displaying all matching rows AND all non-matching rows
 # (full outer join) 
 
